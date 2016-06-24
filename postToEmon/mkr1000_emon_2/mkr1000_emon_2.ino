@@ -11,9 +11,16 @@ char pass[] = "hamradio";    // your network password (use for WPA, or use as ke
 int status = WL_IDLE_STATUS;
 
 
-#define APIKEY        "26fbc95fa1e96990b6dd6541e59c22a3"// replace your emoncms apikeywrite here
-#define HTTPPORT 443          // change this value to point at a local
-#define HOST "http://192.168.2.100/emoncms" //installation of the platform emoncms.org
+//#define APIKEY        "26fbc95fa1e96990b6dd6541e59c22a3" // replace your emoncms apikeywrite here
+//#define HTTPPORT 80          // change this value to point at a local
+//#define HOST "http://192.168.2.100/emoncms" //installation of the platform emoncms.org
+
+String APIKEY = "26fbc95fa1e96990b6dd6541e59c22a3";    // replace your emoncms apikeywrite here
+int HTTPPORT = 80;          // change this value to point at a local
+String HOST = "http://192.168.2.100/emoncms"; //installation of the platform emoncms.org
+
+
+//  http://192.168.2.100/emoncms/input/post.json?node=1&json={power:200}&apikey=26fbc95fa1e96990b6dd6541e59c22a3
 
 
 // set up net client info:
