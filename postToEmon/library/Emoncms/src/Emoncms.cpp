@@ -57,7 +57,7 @@ String Emoncms::publish()  {
 	String response;
 
 	//begin to build the string to send
-	String _url="POST /input/post.json?node=1&json={";
+	String _url="POST /emoncms/input/post.json?node=1&json={";
 	_url+=_jsonString;
 	_url+="}&apikey=";
 	_url+=String(_APIKEY);

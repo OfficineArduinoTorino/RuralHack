@@ -10,15 +10,14 @@ I2CSoilMoistureSensor sensor;
 #include <ArduinoCloud.h>
 
 /////// Wifi Settings ///////
-char ssid[] = "";
-char pass[] = "";
+char ssid[] = "CasaJasmina";
+char pass[] = "c0nn3ct3d";
 
 
-// Arduino Cloud settings and credentials
-const char userName[]   = "";
+const char userName[]   = "casajasmina";
 const char thingName[] = "watersensor";
-const char thingId[]   = "";
-const char thingPsw[]  = "";
+const char thingId[]   = "4606ce19-b6f2-4aec-9b0c-c8cf4037a3cd";
+const char thingPsw[]  = "87995808-225e-45d4-95b7-25bda4b622d7";
 
 
 WiFiSSLClient sslClient;
@@ -62,7 +61,8 @@ pinMode(6,OUTPUT);
   watersensor.begin(thingName, userName, thingId, thingPsw, sslClient);
   watersensor.enableDebug();
   // define the properties
-  watersensor.addProperty("humidity", INT, R);
+    watersensor.addProperty("humidity", FLOAT, R);
+
 }
 
 void loop() {
