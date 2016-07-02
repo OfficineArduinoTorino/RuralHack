@@ -1,25 +1,3 @@
-/*
-  Web client
-
-  This sketch connects to a website (http://www.google.com)
-  using a WiFi shield.
-
-  This example is written for a network using WPA encryption. For
-  WEP or WPA, change the Wifi.begin() call accordingly.
-
-  This example is written for a network using WPA encryption. For
-  WEP or WPA, change the Wifi.begin() call accordingly.
-
-  Circuit:
-   WiFi shield attached
-
-  created 13 July 2010
-  by dlf (Metodo2 srl)
-  modified 31 May 2012
-  by Tom Igoe
-*/
-
-
 #include <SPI.h>
 #include <WiFi101.h>
 
@@ -41,9 +19,6 @@ WiFiClient client;
 void setup() {
   //Initialize serial and wait for port to open:
   Serial.begin(9600);
-  while (!Serial) {
-    ; // wait for serial port to connect. Needed for native USB port only
-  }
 
   // check for the presence of the shield:
   if (WiFi.status() == WL_NO_SHIELD) {
