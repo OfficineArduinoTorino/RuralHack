@@ -1,0 +1,27 @@
+:Project: If this than cat
+:Author: Tommaso Laterza
+:Email: tommasoltrz@arduino.cc
+:Date: 02 April 2016
+:License: Public Domain
+
+= Project: {Project}
+
+  This sketch shows how to program an
+  Arduino/Genuino Board to detect motion
+  through an accelerometer and write data
+  on a google spreadsheet using IFTT.
+
+
+=== License
+This project is released under a {License} License.
+
+=== Contributing
+To contribute to this project please contact {Author} <{Email}>
+
+
+
+
+=== Help
+This document is written in the _AsciiDoc_ format, a markup language to describe documents. 
+If you need help you can search the http://www.methods.co.nz/asciidoc[AsciiDoc homepage]
+or consult the http://powerman.name/doc/asciidoc[AsciiDoc cheatsheet]
