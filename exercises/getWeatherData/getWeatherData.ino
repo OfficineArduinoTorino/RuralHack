@@ -5,6 +5,11 @@ char ssid[] = "IncartataWiFi"; //  your network SSID (name)
 char pass[] = "bosconauta2000";
 int keyIndex = 0;            // your network key Index number (needed only for WEP)
 
+
+String location= "galvanico";
+String apiKey= "b3bdd8d39bb4fca6062cac3701101f41";
+
+
 int status = WL_IDLE_STATUS;
 // if you don't want to use DNS (and reduce your sketch size)
 // use the numeric IP instead of the name for the server:
@@ -19,13 +24,6 @@ WiFiClient client;
 void setup() {
   //Initialize serial and wait for port to open:
   Serial.begin(9600);
-
-  // check for the presence of the shield:
-  if (WiFi.status() == WL_NO_SHIELD) {
-    Serial.println("WiFi shield not present");
-    // don't continue:
-    while (true);
-  }
 
   // attempt to connect to Wifi network:
   while (status != WL_CONNECTED) {
@@ -53,7 +51,11 @@ void getWeather() {
   if (client.connect(server, 80)) {
     Serial.println("connected to server");
     // Make a HTTP request:
-    client.println("GET /data/2.5/weather?q=galvanico&APPID=b3bdd8d39bb4fca6062cac3701101f41");
+    client.print("GET /data/2.5/weather?");
+    client.print("q="+location);
+    client.print("&apiKey="+apiKey);
+    client.println("&units=metric");
+    
     client.println("Host: api.openweathermap.org");
     client.println("Connection: close");
     client.println();
