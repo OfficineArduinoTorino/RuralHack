@@ -5,7 +5,7 @@ A place to store all the code and information for the RuralHack experimentations
 # Structure of the Repository
 
 You can see two main folders.
-In the /exercises you can find basic examples of use of several sensors used in the workshop, while in the /libraries folder some hof the main libraries used are hosted.  
+In the [/exercises](https://github.com/OfficineArduinoTorino/RuralHack/tree/master/exercises) you can find basic examples of use of several sensors used in the workshop, while in the [/libraries](https://github.com/OfficineArduinoTorino/RuralHack/tree/master/libraries) folder some of the main libraries used are hosted.  
 
 # The Kit
 
@@ -33,6 +33,7 @@ Most codes are not by us, in some cases adaptations of somebodyelse's code and p
 The basic idea behind the workshop was create some sort of automatization inside of a rural scenario, with wifi connectivity and not a large area to look after. We started little to grow big.
 
 ![RuralHack Workshop](https://c1.staticflickr.com/8/7404/27509295904_5642902e38_c.jpg)
+
 ([Watch the entire Flickr Ambum on RuralHack](https://www.flickr.com/photos/142132017@N03/albums/72157670025633602) by [Ruralhub](ruralhub.it/en/))
 
 
