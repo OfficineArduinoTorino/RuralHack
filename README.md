@@ -2,6 +2,11 @@
 
 A place to store all the code and information for the RuralHack experimentations held during several workshops held in the summer 2016 in Italy and Mediterranean Areas by Officine Arduino and Ruralhub.
 
+# Structure of the Repository
+
+You can see two main folders.
+In the /exercises you can find basic examples of use of several sensors used in the workshop, while in the /libraries folder some hof the main libraries used are hosted.  
+
 # The Kit
 
 The list of components used in the workshop is - indeed - a kit, which hopefully will be sold on the Genuino/Arduino Store soon.
@@ -14,7 +19,7 @@ The Kit (designed to be used with a [Genuno MKR1000](https://store.arduino.cc/pr
 - [Grove Relay Module](http://seeedstudio.com/depot/Grove-Relay-p-769.html) from Seeed
 - Resistors / pushbuttons / connectors
 
-![RuralHack Kit](https://db.tt/KzGpAfxR)
+![RuralHack Kit](https://github.com/OfficineArduinoTorino/RuralHack/blob/master/exercises/pics/kit_farm_front.jpg)
 
 # The workshop
 
@@ -27,7 +32,7 @@ Most codes are not by us, in some cases adaptations of somebodyelse's code and p
 
 The basic idea behind the workshop was create some sort of automatization inside of a rural scenario, with wifi connectivity and not a large area to look after. We started little to grow big.
 
-![RuralHack Kit](https://c1.staticflickr.com/8/7404/27509295904_5642902e38_c.jpg)
+![RuralHack Workshop](https://c1.staticflickr.com/8/7404/27509295904_5642902e38_c.jpg)
 ([Watch the entire Flickr Ambum on RuralHack](https://www.flickr.com/photos/142132017@N03/albums/72157670025633602) by [Ruralhub](ruralhub.it/en/))
 
 
