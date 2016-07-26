@@ -3,15 +3,15 @@
 #include <ArduinoCloud.h>
 
 /////// Wifi Settings ///////
-char ssid[] = "CasaJasmina";
-char pass[] = "c0nn3ct3d";
+char ssid[] = "YourWifiName";
+char pass[] = "YourWifiPassword";
 
 
 // Arduino Cloud settings and credentials
-const char userName[]   = "casajasmina";
-const char thingName[] = "waterPump";
-const char thingId[]   = "bb9eb916-6030-4216-9854-70f0ca1c8a69";
-const char thingPsw[]  = "0b00d12d-1cc3-41f3-a5c7-6997688ee994";
+const char userName[]   = "YourCloudUsername";
+const char thingName[] = "YourCloudName";
+const char thingId[]   = "YourCloudId";
+const char thingPsw[]  = "YourCloudPassword";
 
 
 WiFiSSLClient sslClient;
@@ -68,8 +68,3 @@ void loop() {
 
   delay(1000);
 }
-
-
-
-
-
