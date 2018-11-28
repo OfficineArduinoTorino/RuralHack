@@ -21,7 +21,7 @@ The Kit (designed to be used with a [Arduino MKR board](https://store.arduino.cc
 - [Grove Relay Module](http://seeedstudio.com/depot/Grove-Relay-p-769.html) from Seeed
 - Resistors / pushbuttons / connectors
 
-![RuralHack Kit](https://github.com/OfficineArduinoTorino/RuralHack/blob/master/exercises/pics/kit_farm_front.jpg)
+![RuralHack Kit](/pics/kit_farm_front.jpg)
 
 # The workshop
 
