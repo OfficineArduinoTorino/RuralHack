@@ -1,11 +1,21 @@
-#include <ArduinoJson.h>
+// This header is used to tell the Arduino IDE
+// to compile with the proper WIFI Library 
+// between MKR1000 and MKR1010
 
+#ifdef ARDUINO_SAMD_MKRWIFI1010
+#include <WiFiNINA.h>
+#elif ARDUINO_SAMD_MKR1000
+#include <WiFi101.h>
+#else
+#error unsupported board
+#endif
 
 #include <SPI.h>
-#include <WiFi101.h>
+#include <ArduinoJson.h>
 
-char ssid[] = "YourWifiName"; //  your network SSID (name)
-char pass[] = "YourWifiPassword";
+#include "arduino_secrets.h"
+char ssid[] = SECRET_SSID; //  your network SSID (name)
+char pass[] = SECRET_PASS;
 int keyIndex = 0;            // your network key Index number (needed only for WEP)
 
 

@@ -1,13 +1,25 @@
-#include <SPI.h>
-#include <WiFi101.h>
 
-char ssid[] = "IncartataWiFi"; //  your network SSID (name)
-char pass[] = "bosconauta2000";
+// This header is used to tell the Arduino IDE
+// to compile with the proper WIFI Library 
+// between MKR1000 and MKR1010
+
+#ifdef ARDUINO_SAMD_MKRWIFI1010
+#include <WiFiNINA.h>
+#elif ARDUINO_SAMD_MKR1000
+#include <WiFi101.h>
+#else
+#error unsupported board
+#endif
+
+#include <SPI.h>
+
+char ssid[] = "YourWifi"; //  your network SSID (name)
+char pass[] = "YourPassword";
 int keyIndex = 0;            // your network key Index number (needed only for WEP)
 
 
-String location= "galvanico";
-String apiKey= "b3bdd8d39bb4fca6062cac3701101f41";
+String location= "YourLocation";
+String apiKey= "YourApiKey";
 
 
 int status = WL_IDLE_STATUS;
@@ -71,7 +83,3 @@ void getWeather() {
     Serial.println(line);
   }
 }
-
-
-
-
